@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TaskApi</name>
+    </assembly>
+    <members>
+        <member name="T:TaskApi.Models.CreateTaskDto">
+            <summary>
+            Represents a new task to be created.
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.CreateTaskDto.Title">
+            <summary>
+            The title of the task.
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.CreateTaskDto.Status">
+            <summary>
+            The status of the task (e.g. Not Started, In Progress, Completed).
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.CreateTaskDto.DueDate">
+            <summary>
+            The due date in ISO 8601 format, e.g. "2025-08-01" or "2025-08-01T15:00:00Z".
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.CreateTaskDto.AssignedTo">
+            <summary>
+            The user assigned to the task (user email or loginName).
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.CreateTaskDto.Priority">
+            <summary>
+            The priority of the task (e.g. Low, Normal, High).
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.CreateTaskDto.Description">
+            <summary>
+            The HTML-rich description of the task.
+            </summary>
+        </member>
+        <member name="T:TaskApi.Models.ErrorResponse">
+            <summary>
+            Standard error response for APIs
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.ErrorResponse.StatusCode">
+            <summary>
+            HTTP status code
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.ErrorResponse.Message">
+            <summary>
+            Human-readable message
+            </summary>
+        </member>
+        <member name="T:TaskApi.Models.TaskDto">
+            <summary>
+            Represents a task item returned from the SharePoint Tasks list.
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.TaskDto.Id">
+            <summary>
+            The unique identifier of the task in SharePoint.
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.TaskDto.Title">
+            <summary>
+            The title of the task.
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.TaskDto.Status">
+            <summary>
+            The current status of the task (e.g., Not Started, In Progress, Completed).
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.TaskDto.DueDate">
+            <summary>
+            The due date of the task, in string format (ISO recommended).
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.TaskDto.AssignedTo">
+            <summary>
+            The name of the person assigned to the task.
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.TaskDto.Priority">
+            <summary>
+            The priority of the task (e.g., High, Normal, Low).
+            </summary>
+        </member>
+        <member name="P:TaskApi.Models.TaskDto.Description">
+            <summary>
+            The HTML-formatted description of the task.
+            </summary>
+        </member>
+    </members>
+</doc>
