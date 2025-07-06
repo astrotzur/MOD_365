@@ -19,6 +19,20 @@ This document lists all key dependencies across the project folders for easier r
 | Microsoft.Identity.Client    | 4.73.1  |
 | Swashbuckle.AspNetCore       | 6.4.0   |
 
+## Secrets Configuration
+
+This project uses the **Microsoft identity client credentials flow** to connect to Microsoft Graph.  
+For local development, you must configure the following secrets using the [dotnet user-secrets](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets) feature:
+
+```bash
+dotnet user-secrets set "AzureAd:TenantId" "<your-tenant-id>"
+dotnet user-secrets set "AzureAd:ClientId" "<your-client-id>"
+dotnet user-secrets set "AzureAd:ClientSecret" "<your-client-secret>"
+```
+You can verify the secrets with:
+```bash
+dotnet user-secrets list
+```
 ---
 
 ## Task 1 — Frontend (TaskUi)
