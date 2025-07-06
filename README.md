@@ -8,6 +8,8 @@ The repository is organized into multiple tasks, each focusing on a different Mi
 - **Task 1: Task Management System**
   - `TaskApi`: .NET Web API backend using Microsoft Graph and SharePoint to manage tasks.
   - `TaskUi`: React front-end to display and create tasks (note: Tailwind CSS integration is missing and currently uses plain CSS instead).
+  - This project uses the **Microsoft identity client credentials flow** to connect to Microsoft Graph.  
+For local development, you must configure the secrets using the [dotnet user-secrets](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets) feature. Read DEPENDENCIES.md for details.
 
 - **Task 2: Project Dashboard Web Part**
   - `ProjectDashboard`: An SPFx web part, implemented using class-based React components instead of modern hooks, to display a simple SharePoint project dashboard.
